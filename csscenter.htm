@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS centering Done Right.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+	* { margin: 0; padding: 0; }
+	html,body,.m { height: 100%; width: 100%; }
+	.m { font-size: 0; overflow: auto; text-align: center; 
+		/*styling>>*/ background-color: #8F1C10;}
+	.m::before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	.m>div {
+		
+		display: inline-block;
+		font-size: 19px;
+		margin: 20px;
+		max-width: 320px;
+		min-height: 20px;
+		min-width: 30px;
+		padding: 14px;
+		vertical-align: middle;
+		/*styling*/
+		color:white;
+		background-color: #140A08;
+		outline:none;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="m">
+		<div contenteditable="true">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, enim, possimus, voluptates, quia voluptatibus voluptas eum quaerat iure aperiam asperiores debitis fuga itaque quibusdam a ad odio assumenda iusto voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ex quia consequatur quae quasi amet veniam est quas error quos perferendis ducimus non similique in soluta magnam dolore molestias veritatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, doloremque iste magni in eveniet ipsa odio mollitia eligendi magnam placeat aliquam hic reprehenderit reiciendis itaque assumenda ratione delectus. Alias, quis.
+		</div>
+	</div>
+</body>
+</html>
